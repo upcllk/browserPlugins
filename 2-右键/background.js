@@ -10,6 +10,17 @@ chrome.contextMenus.create({
 })
 
 chrome.contextMenus.create({ 
+    type: "normal",
+    title: "百度翻译",
+    contexts: ["selection"],
+    onclick: function(info) {
+        window.open("https://fanyi.baidu.com/#en/zh/" + info.selectionText)
+    }
+}, function(){
+
+})
+
+chrome.contextMenus.create({ 
     type: "normal",                         // 菜单类型  "checkbox" 多选框, "radio" 单选框， "separator" 分隔线
     title: "父级",
     id: "hello"

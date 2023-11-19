@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "localTest-3",
+    "version": "1.0.3",
+    "content_scripts": [
+        {
+            "matches_简单粗暴": ["<all_urls>"],
+            "matches": ["*://*.google.com/*"],
+            "js": ["content.js"],
+            "css": ["test.css"],
+            "run_at": "document_idle"
+        }
+    ]
+}

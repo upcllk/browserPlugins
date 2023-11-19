@@ -1,0 +1,11 @@
+{
+    "manifest_version":2,
+    "name":"localTest-1",
+    "description":"第一个扩展",
+    "version":"1.0.0",
+    "icons":{
+        "16":"images/candy.png",
+        "32":"images/candy.png",
+        "48":"images/candy.png"
+    }
+}
